@@ -38,6 +38,11 @@
       "lang": "cs",
       "name": "Čeština",
       "path": "languages/cs.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "languages/pt-BR.json"
     }
   ],
   "url": "https://github.com/txm3278/Enhanced-Region-Behaviors",

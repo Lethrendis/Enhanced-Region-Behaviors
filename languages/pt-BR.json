@@ -1,0 +1,180 @@
+{
+  "enhanced-region-behavior": {
+    "regionClickedLabel": "Região Clicada",
+    "Settings": {
+      "globalOnClickName": "Ativar Evento onClick em todos os Comportamentos de Região",
+      "globalOnClickHint": "Habilitar isso permitirá que o evento onClick seja selecionado para todos os comportamentos de região. Alguns comportamentos podem falhar com este evento ativado, portanto, use com cautela."
+    },
+    "Regions": {
+      "Trap": {
+        "FIELDS": {
+          "saveDC": {
+            "label": "CD",
+            "hint": "A Classe de Dificuldade da salvaguarda/teste."
+          },
+          "saveAbility": {
+            "label": "Atributo de Salvaguarda",
+            "hint": "O atributo usado para a Salvaguarda contra o dano da armadilha. Tem prioridade sobre testes de perícia."
+          },
+          "skillChecks": {
+            "label": "Testes de Perícia",
+            "hint": "Testes de perícia a serem realizados quando a armadilha for ativada. O jogador poderá escolher qual perícia usar."
+          },
+          "damage": {
+            "label": "Dano",
+            "hint": "A quantidade de dano que a armadilha causa quando ativada."
+          },
+          "savedDamage": {
+            "label": "Dano em Sucesso",
+            "hint": "A quantidade de dano que a armadilha causa se a salvaguarda for bem-sucedida."
+          },
+          "damageType": {
+            "label": "Tipo de Dano",
+            "hint": "O tipo de dano causado pela armadilha (ex: fire, cold, acid)."
+          },
+          "saveFailedMessage": {
+            "label": "Mensagem de Falha na Salvaguarda",
+            "hint": "Mensagem exibida quando a salvaguarda falhar."
+          },
+          "saveSucceededMessage": {
+            "label": "Mensagem de Sucesso na Salvaguarda",
+            "hint": "Mensagem exibida quando a salvaguarda for um sucesso."
+          },
+          "automateDamage": {
+            "label": "Automatizar Dano",
+            "hint": "Se ativado, a armadilha aplicará automaticamente o dano quando for disparada."
+          },
+          "triggerBehaviorOnSave": {
+            "label": "Acionar Comportamentos em Sucesso",
+            "hint": "Se definido, esses comportamentos serão acionados quando a salvaguarda for bem-sucedida."
+          },
+          "triggerBehaviorOnFail": {
+            "label": "Acionar Comportamentos em Falha",
+            "hint": "Se definido, esses comportamentos serão acionados quando a salvaguarda falhar."
+          }
+        },
+        "TrapDialogTitle": "Armadilha",
+        "TrapSaveAbilityContent": "Escolha com qual Atributo será feita a salvaguarda",
+        "TrapSkillCheckContent": "Escolha com qual Perícia será feito o teste",
+        "TrapDamageMessage": "{name} acionou uma armadilha e sofreu {damage} de dano {type}!",
+        "TrapAvoidedMessage": "{name} evitou uma armadilha e sofreu apenas {damage} de dano {type}!",
+        "TrapSavingThrowMessage": "Salvaguarda",
+        "TrapDamageRollMessage": "Rolagem de Dano da Armadilha"
+      },
+      "Music": {
+        "FIELDS": {
+          "playlistName": {
+            "label": "Nome da Playlist",
+            "hint": "O nome da playlist de música onde procurar as músicas."
+          },
+          "songNames": {
+            "label": "Nomes das Músicas",
+            "hint": "Lista de nomes de músicas, separadas por vírgula, a serem reproduzidas."
+          },
+          "playAll": {
+            "label": "Reproduzir Todas as Músicas",
+            "hint": "Se ativado, todas as músicas serão reproduzidas simultaneamente."
+          },
+          "stop": {
+            "label": "Parar Música Atual",
+            "hint": "Se ativado, toda música atualmente tocando será parada antes de iniciar a nova."
+          },
+          "playPlaylist": {
+            "label": "Reproduzir Playlist Completa",
+            "hint": "Se ativado, a playlist completa será reproduzida em vez de músicas específicas."
+          }
+        }
+      },
+      "SoundEffect": {
+        "FIELDS": {
+          "volume": {
+            "label": "Volume",
+            "hint": "O nível de volume do efeito sonoro (0-1)."
+          },
+          "soundPath": {
+            "label": "Caminho do Arquivo de Som",
+            "hint": "O caminho para o arquivo de som ou efeito do Sequencer a ser reproduzido."
+          }
+        }
+      },
+      "VisualEffect": {
+        "FIELDS": {
+          "imagePath": {
+            "label": "Nome do Efeito",
+            "hint": "O nome do efeito visual a ser reproduzido ou o caminho para um arquivo de imagem."
+          },
+          "duration": {
+            "label": "Duração",
+            "hint": "A duração do efeito visual em segundos (defina como 0 para reproduzir a duração completa)."
+          },
+          "scale": {
+            "label": "Escala",
+            "hint": "O fator de escala para o efeito visual (1.0 é o tamanho normal)."
+          },
+          "infinite": {
+            "label": "Duração Infinita",
+            "hint": "Se ativado, o efeito visual será reproduzido indefinidamente (interrompido por Comportamento Desativado)."
+          },
+          "belowTokens": {
+            "label": "Abaixo dos Tokens",
+            "hint": "Se ativado, o efeito visual será exibido abaixo dos tokens."
+          },
+          "playAtTokenLocation": {
+            "label": "Reproduzir no Local do Token",
+            "hint": "Se ativado, o efeito visual será reproduzido na localização do token que o acionou."
+          }
+        }
+      },
+      "Elevation": {
+        "FIELDS": {
+          "elevation": {
+            "label": "Elevação",
+            "hint": "A elevação a ser definida para os tokens que entrarem nesta região."
+          }
+        }
+      },
+      "Journal": {
+        "FIELDS": {
+          "journalId": {
+            "label": "ID do Diário",
+            "hint": "O ID único da entrada de diário a ser aberta. Tem prioridade sobre o Nome do Diário se ambos forem fornecidos."
+          },
+          "journalName": {
+            "label": "Nome do Diário",
+            "hint": "O nome da entrada de diário a ser aberta. Usado se o ID do Diário não for fornecido."
+          },
+          "journalPageId": {
+            "label": "ID da Página do Diário",
+            "hint": "O ID da página específica a ser exibida (opcional). Tem prioridade sobre Nome e ID do Diário."
+          },
+          "showToAll": {
+            "label": "Mostrar para Todos os Jogadores",
+            "hint": "Se ativado, a entrada de diário será mostrada a todos os jogadores. Caso contrário, apenas ao jogador que a acionou ou ao dono do token."
+          }
+        },
+        "MigrationError": "Falha na migração para journalPageId. Redefina o ID da página nas configurações de Comportamento de Abrir Diário."
+      },
+      "TriggerAction": {
+        "FIELDS": {
+          "itemId": {
+            "label": "ID do Item",
+            "hint": "O ID único do item a ser acionado. (Arraste do token de onde deseja usar o item)."
+          }
+        }
+      }
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "enhanced-region-behavior": {
+        "Trap": "Armadilha",
+        "Music": "Música",
+        "SoundEffect": "Efeito Sonoro",
+        "VisualEffect": "Efeito Visual",
+        "Elevation": "Elevação",
+        "Journal": "Abrir Diário",
+        "TriggerAction": "Acionar Gatilho"
+      }
+    }
+  }
+}
